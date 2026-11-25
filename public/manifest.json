@@ -1,0 +1,33 @@
+{
+  "id": "/?view=terminal",
+  "name": "Lemon Terminal — LemonFunding",
+  "short_name": "LemonTerm",
+  "description": "Proprietary trading execution terminal by LemonFunding.",
+  "start_url": "/?view=terminal",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#141A10",
+  "theme_color": "#141A10",
+  "orientation": "any",
+  "categories": ["finance", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

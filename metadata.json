@@ -1,0 +1,8 @@
+{
+  "name": "LemonFunding",
+  "description": "Transparent prop trading challenges, interactive 3D citrus capital vault, and verifiable payout funding built on a fresh lemon standard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

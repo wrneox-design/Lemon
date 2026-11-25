@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="110" fill="#141A10"/>
+  <circle cx="256" cy="256" r="170" fill="#FACC15"/>
+  <ellipse cx="256" cy="256" rx="155" ry="120" transform="rotate(-30 256 256)" fill="#FEF08A"/>
+  <circle cx="256" cy="256" r="38" fill="#15803D"/>
+  <circle cx="256" cy="256" r="22" fill="#FACC15"/>
+  <path d="M 256 86 C 268 64 304 60 320 74 C 304 96 272 102 256 86 Z" fill="#15803D"/>
+  <text x="256" y="440" font-family="system-ui, sans-serif" font-size="34" font-weight="800" fill="#FCFBF4" text-anchor="middle" letter-spacing="2">LEMON TERMINAL</text>
+</svg>

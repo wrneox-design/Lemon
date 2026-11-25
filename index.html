@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LemonFunding — Transparent Prop Trading Challenges</title>
+    <meta
+      name="description"
+      content="Transparent prop trading challenges, clear drawdown math, and fast payouts built on the LemonFunding citrus standard."
+    />
+    <meta property="og:title" content="LemonFunding — Transparent Prop Trading Challenges" />
+    <meta
+      property="og:description"
+      content="Transparent prop trading challenges, clear drawdown math, and fast payouts built on the LemonFunding citrus standard."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#09090B" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="LemonTerm" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+    <link rel="icon" type="image/svg+xml" href="/lemon-icon-192.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <script>
+      window.__lemonDeferredPrompt = null;
+      window.addEventListener('beforeinstallprompt', function (e) {
+        e.preventDefault();
+        window.__lemonDeferredPrompt = e;
+        window.dispatchEvent(new CustomEvent('lemon-pwa-ready'));
+      });
+      window.addEventListener('appinstalled', function () {
+        window.__lemonDeferredPrompt = null;
+        window.dispatchEvent(new CustomEvent('lemon-pwa-installed'));
+      });
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(function () {});
+      }
+    </script>
+  </head>
+  <body class="bg-[#09090B] text-white antialiased selection:bg-[#F7A600]/30 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
